@@ -1,0 +1,49 @@
+.backdrop {
+    /* background-image: url("/assets/backdrop.svg");
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: auto 75%; */
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+header {
+    padding-top: 5.125rem;
+    padding-bottom: 0em;
+}
+
+.logo-header {
+    height: 2.5rem;
+    margin-right: 0.5em;
+}
+
+section {
+    padding-bottom: 0 !important;
+}
+
+/* ref: https://martinopilia.com/posts/2020/02/22/migration.html */
+ol.bibliography {
+    counter-reset: item;
+    padding-left: 4rem;
+}
+
+ol.bibliography li {
+    list-style-type: none;
+    margin: 6pt 0;
+}
+
+ol.bibliography li:before {
+    content: "[" counter(item) "] ";
+    counter-increment: item;
+    position: absolute;
+    text-align: right;
+    width: 3rem;
+    margin-left: -4rem;
+}
+
+.img-feature {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: contain;
+}
